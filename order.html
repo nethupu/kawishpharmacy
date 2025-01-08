@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+
+    <!-- Displaying the logo -->
+    
+    <div class="mainfont">
+      <h1><span style="color:#3f09d5">ne2pool</span><span style="color:#FFD700"> Pharmacy</span></h1>
+    </div>
+
+
+    <!--Displaying the navigation bar-->
+    <nav>
+      <ul>
+          <li><a href = "./index.html" class="active">Home</a></li>
+          <li><a href = "./order.html">Order</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <br>
+  <h1>Order medicines</h1>
+  <!--Order items will be displayed here-->
+  <div class="OrderContainer">
+    <form id="orderForm">
+
+      <!-- Analgesics Section -->
+      <section class="medicine-section">
+        <h2>Analgesics</h2>
+        <div class="item-row">
+          
+          <label>
+            Paracetamol:
+            <p>Rs. 960 - per Quantity</p>
+            <input type="number" placeholder="Enter amount in Quantity" name="Paracetamol" min="0" data-price="960" data-section="Analgesics">
+          </label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Ibuprofen:
+            <p>Rs. 980 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Ibuprofen" min="0" data-price="380" data-section="Analgesics"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Aspirin:
+            <p>Rs. 800 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Aspirin" min="0" data-price="800" data-section="Analgesics"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Naproxen:
+            <p>Rs. 1000 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Naproxen" min="0" data-price="1000" data-section="Analgesics"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Capsaicin:
+            <p>Rs. 1200 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Capsaicin" min="0" data-price="1200" data-section="Analgesics"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Acetaminophen:
+            <p>Rs. 1500 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Acetaminophen" min="0" data-price="1500" data-section="Analgesics"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+      </section>
+      <br>
+
+      <!-- Antibiotics Section -->
+      <section class="medicine-section">
+        <h2>Antibiotics</h2>
+        <div class="item-row">
+          <label>
+            Metronidazole:
+            <p>Rs. 480 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Metronidazole" min="0" data-price="480" data-section="Antibiotics"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+
+        <div class="item-row">
+          <label>
+            Doxycycline:
+            <p>Rs. 900 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Doxycycline" min="0" data-price="900" data-section="Antibiotics"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          
+          <label>
+            Cephalexin:
+            <p>Rs. 350 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Cephalexin" min="0" data-price="350" data-section="Antibiotics"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          
+          <label>Ciprofloxacin:
+            <p>Rs. 200 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Ciprofloxacin" min="0" data-price="200" data-section="Antibiotics"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          
+          <label>Amoxicillin:
+            <p>Rs. 640 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Amoxicillin" min="0" data-price="640" data-section="Antibiotics"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          
+          <label>
+            Azithromycin: 
+            <p>Rs. 1120 - per Quantity</p>
+            <input type="number" placeholder="Enter amount in Quantity" name="Azithromycin" min="0" data-price="1120" data-section="Antibiotics"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+      </section>
+      <br>
+
+      <!-- Dairy Produce Section -->
+      <section class="medicine-section">
+        <h2>Antidepressants</h2>
+
+        <div class="item-row">
+          <label>
+            Duloxetine:
+            <p>Rs. 250 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount" name="Duloxetine" min="0" data-price="250"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+
+        <div class="item-row">
+          <label>
+            Escitalopram: 
+            <p>Rs. 1800 - per Quantity</p>
+            <input type="number" placeholder="Enter amount" name="Escitalopram" min="0" data-price="1800"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Venlafaxine:
+            <p>Rs. 150 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount" name="Venlafaxine" min="0" data-price="150"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Paroxetine: 
+            <p>Rs. 1500 - per Quantity</p>
+            <input type="number" placeholder="Enter amount" name="Paroxetine" min="0" data-price="1500"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Sertraline: 
+            <p>Rs. 30 - per Quantity</p>
+            <input type="number" placeholder="Enter amount" name="Sertraline" min="0" data-price="30"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Fluoxetine: 
+            <p>Rs. 1200 - per Quantity</p>
+            <input type="number" placeholder="Enter amount" name="Fluoxetine" min="0" data-price="1200"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+      </section>
+      <br>
+
+      <!-- Meat Section and seafood section-->
+      <section class="medicine-section">
+        <h2>Antihistamines</h2>
+        <div class="item-row">
+          <label>
+            Diphenhydramine:
+            <p>Rs. 1200 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Diphenhydramine" min="0" data-price="1200" data-section="Antihistamines"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Loratadine:
+            <p>Rs 1500 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Loratadine" min="0" data-price="1500" data-section="Antihistamines"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Cetirizine:
+            <p>Rs 2000 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Cetirizine" min="0" data-price="2000" data-section="Antihistamines"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Fexofenadine:
+            <p>Rs. 2500 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Fexofenadine" min="0" data-price="2500" data-section="Antihistamines"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+      </section>
+      <br>
+
+      <!-- Antihypertensives Section -->
+      <section class="medicine-section">
+        <h2>Antihypertensives</h2>
+        <div class="item-row">
+          <label>
+            Lisinopril:
+            <p>Rs. 150 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Lisinopril" min="0" data-price="150"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Amlodipine:
+            <p>Rs. 180 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount in Quantity" name="Amlodipine" min="0" data-price="180"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Losartan:
+            <p>Rs. 300 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount" name="Losartan" min="0" data-price="300"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          <label>
+            Hydrochlorothiazide: 
+            <p>Rs. 800  - per Quantity</p>
+            <input type="number" placeholder="Enter amount in Quantity" name="Hydrochlorothiazide" min="0" data-price="800"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          
+          <label>
+            Atenolol: 
+            <p>Rs. 100 - per Quantity</p>
+            <input type="number" placeholder="Enter amount in Quantity" name="Atenolol" min="0" data-price="100"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+        <div class="item-row">
+          
+          <label>
+            Irbesartan:
+            <p>Rs. 1500 - per Quantity</p> 
+            <input type="number" placeholder="Enter amount" name="Irbesartan" min="0" data-price="1500"></label>
+          <button type="button" class="addToCart">Add to Cart</button>
+        </div>
+      </section>
+      <br>
+      <!-- Order Summary Section -->
+      <section class="order-summary">
+        <h2>Order Summary</h2>
+        <h2>Total Price: <span id="totalPrice">0</span></h2>
+        <table id="orderSummary">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price (LKR)</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Order summary items will be dynamically added here -->
+          </tbody>
+        </table>
+      </section>
+      <button type="button" id="saveFavorites" class="tablesbtn">Save as Favorite</button>
+      <button type="button" id="applyFavorites" class="tablesbtn">Apply Favorites</button>
+      <button type="button" id="purchaseButton" class="tablesbtn">Purchase</button>
+    </form>
+  </div>
+  
+
+  <!-- Footer section -->
+  <footer>
+    <div>
+      <h2 class = "footerheading" id = "ContactUs">Contact Info</h2>
+      <div class = "info">
+        <div>
+          <span class = "fas fa-map-marker-alt"></span>
+          <span>ne2pool Pharmacy<br> 103 Galle Rd, Dehiwala</span>
+        </div> 
+        <div>
+          <span class = "fas fa-phone-alt"></span>
+          <p><a href = "tel:0751234567">0771234567</a></p>
+        </div>   
+        <div>
+          <span class = "fas fa-envelope"></span>
+          <p><a href = "mailto:info@KDS.lk">info@ne2poolfamily.lk</a></p>
+        </div>        
+      </div>
+    </div>
+    <div>
+      <h2  class = "footerheading">Follow Us</h2>
+      <div class = "social">
+        <a href="https://www.instagram.com/dinid_u_?igsh=MXAyZTRmcWp3emFibA%3D%3D&utm_source=qr ">Facebook</a>
+        <br>
+        <a href="https://www.instagram.com/dinid_u_?igsh=MXAyZTRmcWp3emFibA%3D%3D&utm_source=qr ">Twitter</a>
+        <br>
+        <a href="https://www.instagram.com/dinid_u_?igsh=MXAyZTRmcWp3emFibA%3D%3D&utm_source=qr ">Instagram</a>
+      </div>
+    </div>
+  </footer>
+  <script src="order.js"></script>
+</body>
+</html>
